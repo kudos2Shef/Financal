@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* min-height: 100vh; */
+    
+    --Lime: hsl(61, 70%, 52%);
+    --Red: hsl(4, 69%, 50%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Slate100: hsl(202, 86%, 94%);
+    --Slate300: hsl(203, 41%, 72%);
+    --Slate500: hsl(200, 26%, 54%);
+    --Slate700: hsl(200, 24%, 40%);
+    --Slate900: hsl(202, 55%, 16%);
+    --hover:rgb(255, 210, 76);
+    --hover1:rgba(252, 245, 150,0.5);
+/* 239,232,138*/
+}
+body{
+    background-color: var(--Slate100);
+
+}
+nav{
+    background-color: hsl(198, 62%, 26%);
+    color: hsl(0, 0%, 100%);
+}
+.navbar-brand{
+    color: hsl(0, 0%, 100%);
+
+}
+.nav-link{
+    color: hsl(0, 0%, 100%);
+
+}
+.container{
+    width: 900px;
+
+}
+
+.row .col:last-child{
+    background-color: var(--Slate900);
+    border-radius: 0 15px 15px 30px;
+    color: var(--White);
+
+    }
+
+    .row {
+        background-color: var(--White);
+        border-radius: 15px;
+        }
+
+.top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.top a{
+    text-decoration-style: dashed;
+    color: var(--Slate300);
+}
+.mortgage_cal{
+    gap:10px;
+}
+
+.types .form-check{
+    border: 1px solid black;
+    padding-left: 32px ;
+    padding: 5px 0 5px 37px;
+    margin: 6px 0;
+    border-radius:4px ;
+}
+.types .form-check:hover{
+    border:1px solid var(--hover);    
+    cursor: pointer ;
+}
+.types p{
+    margin-bottom: 0;
+    }
+button{
+    background-color: var(--Lime);
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+button>span{
+    padding-right: 10px ;
+}
+.input-group{
+    padding-top: 5px;
+}
+
+
+    .form-check-input:checked{
+        appearance: none;  
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    #basic-addon1,#basic-addon2{
+        background-color: var(--Slate100);
+
+    }
+  
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media (max-width:770px){
+       
+        .row{
+            flex-direction: column;
+            border-radius: 0;
+        }
+
+        .row .col:last-child{
+            min-height: 300px;
+            border-radius: 0;
+        }
+    }
+
+    @media (max-width:576px){
+  
+        .container{
+            width: 100%;
+        }
+
+        
+
+        
+        
+    }
+    

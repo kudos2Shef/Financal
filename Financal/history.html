@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory History</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<style>    
+    @import url('splitterStyles.css');
+    
+</style>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="index.html">     
+                    <h1>Financal</h1>
+
+           </a>
+  
+  
+         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item text-center">
+      <a class="nav-link " href="index.html">About</a>
+  
+    </li>
+   
+    <li class="nav-item text-center">
+      <a class="nav-link" href="MortgageCal.html">Mortgage Cal</a>
+  
+    </li>
+    <li class="nav-item text-center">
+      <a class="nav-link" href="Splitter.html">Splitter</a>
+  
+    </li>
+   
+    <li class="nav-item text-center">
+      <a class="nav-link" href="history.html">History</a>
+  
+    </li>
+  
+  </ul>
+  </div>
+  </div>
+  </nav>
+
+      
+      
+    <div class="container-md mt-5">
+      <div class="customModals ps-3 pe-3">
+    
+      <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="memoryModals">
+        Save
+      </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Info</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="types" >
+              <p> Pay Type</p>
+               <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                 <label class="form-check-label" for="flexRadioDefault1">
+                     I owe
+                 </label>
+             
+               </div>
+               <div class="form-check">
+                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                 <label class="form-check-label" for="flexRadioDefault2">
+                     I receive
+                 </label>
+               </div>
+               <span id="error"></span>
+             </div>
+             
+            
+              <span id="error2"></span>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon5" id="name" oninput="this.value = this.value.replace(/[0-9]/g, '')" required>
+                <span class="input-group-text" id="basic-addon5" >name</span>
+              </div>
+              <div class="input-group mb-3">
+                <input type="" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon5" id="money" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" required>
+                <span class="input-group-text" id="basic-addon5" >money</span>
+              </div>
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="saveMemory">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      </div>
+          
+        <h2>Memory History</h2>
+        <div id="memoryCards" class="row"></div> 
+        <a href="index.html" class="btn btn-primary mt-3">Go Back</a>
+        <a href="history.html" class="btn btn-primary mt-3" id="clr">clear All</a>
+
+
+    </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="history.js"></script>
+</body>
+</html>
